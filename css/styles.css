@@ -1,0 +1,195 @@
+
+@font-face{
+	font-family: 'DK Lemon Yellow Sun';
+	src: url("../fonts/DK Lemon Yellow Sun.otf") format("opentype");
+}
+
+@font-face{
+	font-family:'ChaparralPro-Regular';
+	src: url("../fonts/ChaparralPro-Regular.otf") format("opentype");
+}
+
+body {
+	background:url(../images/background.jpg) fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1{
+	color:#374d4c;
+	text-decoration:none;
+	font-size:80px;
+	font-weight: bold;
+	font-family: 'DK Lemon Yellow Sun', sans-serif;
+}
+
+li{
+	color:#374d4c;
+	text-decoration:none;
+	font-size:40px;
+	font-weight: lighter;
+	line-height: 10%;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	font-family: 'DK Lemon Yellow Sun', sans-serif;
+}
+
+p{
+	color:#374d4c;
+	text-decoration:none;
+	font-size:20px;
+	max-width: 830px;
+	font-family: 'ChaparralPro-Regular', sans-serif;
+}
+
+a {
+	color:white;
+	text-decoration:none;
+	font-size:40px;
+	font-family: 'DK Lemon Yellow Sun', sans-serif;
+}
+
+a:hover {
+	color:#374d4c;
+	transition: ease-in-out;
+	text-decoration: none;
+}
+
+footer{
+	float: bottom;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	padding-top: 11em;
+}
+
+
+/* Layout
+------------------------------------------*/
+
+.container{
+	padding-bottom: 3em;
+	margin: 0 auto;
+	width:100%;
+	max-width: 2000px; 
+}
+
+.main {
+	margin: 0 auto;
+	width:95%;
+	max-width:1500px;
+}
+
+.logo{
+	float: left;
+	margin: 0 0 0 2em;
+	padding-top: 1.5em;
+}
+
+.social{
+	float: right;
+	padding-top: 1.5em;
+	padding-right: 1.5em;
+}
+
+
+.first{
+	padding-top: 5em;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+
+.secondary{
+	padding-top: 1em;
+}
+
+.secondary{
+	padding: .15em 1em 1em 1em;
+}
+
+.button{
+	float: right;
+	padding-right: 7em;
+}
+
+.steps{
+	list-style:none;
+	float: left;
+}
+
+.one{
+	height:40px;
+	width:40px;
+	display:inline-block;
+	background: url(../images/one.png);
+}
+
+.two{
+	height:40px;
+	width:40px;
+	display:inline-block;
+	background: url(../images/two.png);
+}
+
+.three{
+	height:40px;
+	width:40px;
+	display:inline-block;
+	background: url(../images/three.png);
+}
+
+.text{
+	padding-left: 3em;
+}
+
+.fit {
+  max-width: 100%;
+  max-height: 100%;
+  background: cover;
+}
+
+
+/* Animation Enlarge (social/links)
+------------------------------------------*/
+
+@-webkit-keyframes enlarge {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.05);
+	}
+}
+
+.scale:hover {
+	animation: enlarge 1s;
+	-webkit-animation: enlarge 1s infinite;
+}
+
+
+/*------------media for mobile-------------*/
+
+@media screen and (min-width:800px){
+
+	.main {
+		display:flex;
+		justify-content:space-between;
+	}
+
+
+/*	.first{ 
+		width:10%;
+		order:1;
+	}
+
+	.secondary{
+		width:55%;
+		order:2;
+	}*/
+
+
+
+
+
+
